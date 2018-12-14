@@ -1,0 +1,55 @@
+page-side-menu {
+    font-family: 'Dosis', sans-serif;
+    &.direction_rtl {
+        direction: rtl;
+        .form-action[name="password"] {
+            padding-right: 10px !important;
+            padding-left: 30px;
+        }
+        h1:after {
+            right: 0px;
+            left: auto !important;
+        }
+        .password-icon {
+            right: auto !important;
+            left: 10px;
+        }
+    }
+    &.direction_ltr {
+        direction: ltr;
+    }
+    .sideMenu {
+        background: $white;
+        padding: 15px;
+        height: 100%;
+        max-width: 250px;
+        box-sizing: border-box;
+        h2 {
+            color: #333;
+        }
+        .player-profile {
+            border-bottom: 2px solid $text-color;
+            margin:0px 0px 20px;
+            padding: 0px 0px 30px;
+            .player-img {
+                img {
+                    width:50px;
+                    height:50px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .list{
+            .item{
+               padding: 0px;
+               color: #333;
+               border: 0px; 
+               .item-inner{
+                   border-bottom: 0px;
+                   background: none;
+                   padding:0px 10px;
+               } 
+            }
+        } 
+    }
+}

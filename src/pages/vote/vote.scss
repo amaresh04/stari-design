@@ -1,0 +1,113 @@
+page-vote {
+    .show-votes {
+        display: flex;
+        justify-content: center;
+        margin:20px 0px;
+        .vote-circle {
+            background: #F1F1F1;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            font-size: 30px;
+            color: $Black;
+            display: flex;
+            position: relative;
+            strong{
+                margin-top: 3px;
+            }
+            .plus-sign {
+                font-weight: 700;
+                
+                .fas{
+                    font-size: 15px;
+                }
+            }
+            .arrow-up {
+                position: absolute;
+                top: 0px;
+                right: 5px;
+                width: 15px;
+                height: 15px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 15px;
+                border-radius: 50%;
+                color: $white;
+                font-size: 9px;
+                background: $Black;
+            }
+        }
+    }
+    .votes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 20px;
+        .vote-minus {
+            width:30px;
+            height:30px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            background: #fff;
+            text-decoration: none;
+            font-size: 14px;
+             margin: 0px 10px;
+             padding: 0px;
+        }
+        .vote-plus {
+            margin: 0px !important;
+            height:30px;
+            min-width: 115px;
+            .fa-plus{
+             font-size: 20px;
+            }
+            small{
+                margin: 0px 5px;
+            }
+        }
+    }
+    .remains-votes {
+        font-size: 14px;
+        margin: 0px 0px 45px;
+        small {
+            margin: 0px 5px;
+        }
+    }
+    .field-control {
+        margin: 0px 0px 15px;
+        .form-title {
+            font-size: 16px;
+            color: $white;
+            margin: 0px 0px 10px;
+            display: block;
+        }
+        .form-action {
+            border: 1px solid #707070;
+            font-size: 16px;
+            color: $white;
+            padding: 10px;
+            height:175px;
+            box-sizing: border-box;
+            width: 100%;
+            color: $bg_color;
+        }
+    }
+    .purchase-block {
+        color: $white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        small {
+            font-size: 12px;
+        }
+       
+    }
+
+}

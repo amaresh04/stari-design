@@ -1,0 +1,234 @@
+page-search {
+    &.direction_rtl {
+        direction: rtl;
+        .search {
+            right: auto !important;
+            left: 15px;
+        }
+        .back-button-icon{
+            transform: rotate(-180deg);
+            margin-left: 5px;
+        }
+
+    }
+    &.direction_ltr {
+        direction: ltr;
+    }
+    .home-upper-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .toplinks {
+            background-color: #30B2E5;
+            background: -webkit-gradient(linear, left top, right top, from(#30B2E5), to(#2E89AC));
+            background: -webkit-linear-gradient(left, #30B2E5, #2E89AC);
+            background: -o-linear-gradient(left, #30B2E5, #2E89AC);
+            background: linear-gradient(to right, #30B2E5, #2E89AC);
+            -webkit-transition: 0.2s ease-in-out;
+            -o-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            color: $white;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 30px;
+            &:hover {
+                opacity: 1;
+                -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            img {
+                width: 26px;
+                margin: 0px 10px;
+                -webkit-filter: brightness(0) invert(1);
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    /*---Player Block ---*/
+    .block {
+        display: flex;
+        flex-direction: column;
+        .bg-img {
+            background: url(../../assets/imgs/football-playing-kids.png) center center no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 140px;
+            border-radius: 10px 10px 0px 0px;
+            .small-img {
+                background: url(../../assets/imgs/player.jpg) center center no-repeat;
+                background-size: cover;
+                width: 60px;
+                height: 60px;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                margin: 15px 10px;
+            }
+        }
+        .block-footer {
+            display: flex;
+            height: 80px;
+            padding: 0px 15px;
+            justify-content: flex-start;
+            align-items: center;
+            background: #333;
+            border-radius: 0px 0px 10px 10px;
+            .player-name {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                h3 {
+                    font-size: 21px;
+                    color: $white;
+                    margin: 0px 0px 5px;
+                    font-weight: 700;
+                }
+                .country-sec {
+                    font-size: 11px;
+                    color: $text-color;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .country-name {
+                        display: inline-block;
+                        margin: 0px 8px;
+                    }
+                }
+                .circle {
+                    display: flex;
+                    width: 12px;
+                    height: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    font-size: 8px;
+                    background: $white;
+                    color: $bg-color;
+                }
+            }
+            .player-position {
+                display: flex;
+                justify-content: flex-end;
+                flex: 1;
+                align-items: center;
+                .arrow-wrap {
+                    border: 1px solid #369B33;
+                    font-size: 20px;
+                    color: #369B33;
+                    background: rgba(54, 155, 51, .15);
+                    border-radius: 100%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+                .dot-sing {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 5px;
+                    cursor: pointer;
+                    .dot {
+                        display: inline-block;
+                        width: 6px;
+                        height: 6px;
+                        background: $white;
+                        border-radius: 100%;
+                        margin: 0px 1px;
+                    }
+                }
+            }
+        }
+    }
+    /*--- /Player Block ---*/
+
+    .list{
+        margin: 0px;
+        .item{
+            background: transparent;
+            padding: 0px;
+            border: 0px !important;
+            margin: 0px 0px 20px;
+            .item-inner{
+                background: transparent;
+                padding: 0px;
+                border: 0px;
+                .label {
+                     margin: 0px;
+                }
+            }
+        }
+    }
+
+    .search-wrap{
+        @include borderRadius(50px);
+        border:1px solid $white;
+        height:36px;
+        background: $white;
+        position: relative;
+        margin: 0px 0px 15px;
+        .form-action{
+            border: 0px;
+            background: transparent;
+            color: #fff;
+            display: flex;
+            height:36px;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 0px 40px 0px 10px;
+            box-sizing: border-box;
+            color: $Black;
+            font-size: 16px;
+            &::placeholder{
+                color: $text-color;
+            }
+        }
+        button{
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            color: $text-color;
+            background: transparent;
+            font-size:16px;
+            margin-top: -10px;
+            padding: 0px;
+            width: 30px;
+            height: 20px;
+        }
+    }
+    .tags{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px 0px 15px;
+        // flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        .tag{
+            @include borderRadius(50px);
+            color: $white;
+            font-size: 14px;
+            background: $Black;
+            min-width: 100px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+            height:25px;
+            align-items: center;
+            padding: 0px 10px;
+            margin: 0px 5px 5px;
+            .text-tag{
+                display: flex;
+                flex: 1;
+                margin: 0px 5px;
+            }
+
+        }
+    }
+}

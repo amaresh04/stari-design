@@ -1,0 +1,78 @@
+<!--
+  Generated template for the CompleteTalentProcessPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <div class="logo-header">
+      <a href="javascript:void(0)" class="back-arrow fa fa-chevron-left"></a>
+      <a class="logo" href="javascript:void(0)"><img src="../../assets/imgs/stari-logo.png" alt="Stari" title="Stari" /></a>
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<div class="radiowrap">
+    <span class="small-circle process-completed"></span>
+    <span class="small-circle  process-completed"></span>
+    <span class="small-circle processing "></span>
+    <span class="small-circle "></span>
+</div>
+<ion-content padding>
+ 
+  <div class="becomeTalentComplete">
+    <div class="field-control">
+      <ion-item>
+        <ion-label>Nationality</ion-label>
+        <ion-select [(ngModel)]="nationality">
+          <ion-option value="Indian">Indian</ion-option>
+          <ion-option value="USA">USA</ion-option>
+          <ion-option value="SriLanka">SriLanka</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div class="field-control-wrap">
+      <div class="field-control">
+        <label class="form-title">Height(in CM)</label>
+        <input class="form-action" name="Height" type="text">
+        <div class="error-msg" style="display:none;">Error message</div>
+      </div>
+      <div class="field-control">
+        <label class="form-title">Weight(in KG)</label>
+        <input class="form-action" name="Weight" type="text">
+        <div class="error-msg" style="display:none;">Error message</div>
+      </div>
+    </div>
+
+    <div class="field-control">
+      <label class="form-title">Your Dominant Foot?</label>
+      <div class="radio-box">
+        <input type="radio" id="rd1" name="radio-group" checked>
+        <label for="rd1">Right Foot</label>
+      </div>
+
+      <div class="radio-box">
+        <input type="radio" id="rd2" name="radio-group">
+        <label for="rd2">Left Foot</label>
+      </div>
+
+
+      <div class="radio-box">
+        <input type="radio" id="rd3" name="radio-group">
+        <label for="rd3">Equal Right & Left Foot</label>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <div class="footer-links">
+      <a href="javascript:void(0)">Confirm & Continue</a>
+    </div>
+  </ion-toolbar>
+</ion-footer>

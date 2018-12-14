@@ -1,0 +1,135 @@
+page-account-setting {
+    /* ---- Direction ---*/
+    &.direction_rtl {
+        direction: rtl;
+        .search {
+            right: auto !important;
+            left: 10px;
+        }
+        h1:after {
+            right: 0px;
+            left: auto !important;
+        }
+       
+    }
+    &.direction_ltr {
+        direction: ltr;
+    }
+    .varified {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: $white;
+        font-size: 16px;
+        margin: 0px 0px 20px;
+        .email-varify {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            label {
+                font-weight: 600;
+                margin: 0px 4px;
+            }
+            .varifiy {
+                width: 76px;
+                height: 25px;
+                color: $white;
+                @include borderRadius(50px);
+                background: #369B33;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                margin: 0px 8px;
+                .fas {
+                    margin: 0px 4px;
+                }
+            }
+        }
+    }
+    .subheader {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .hiddenpassword {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+    }
+
+    .field-control {
+        margin: 0px 0px 15px;
+        .form-title {
+            font-size: 16px;
+            color: $white;
+            margin: 0px 0px 10px;
+            display: block;
+        }
+        .form-action {
+            border: 1px solid #707070;
+            font-size: 16px;
+            color: $white;
+            padding: 10px;
+            height: 49px;
+            box-sizing: border-box;
+            width: 100%;
+            color: $bg_color;
+        }
+        .form-action[name="password"] {
+            padding-right: 30px;
+        }
+    }
+
+    .change-language{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        color: $white;
+        .country-name{
+            flex:1;
+            .flag{
+                display: inline-block;
+                margin: 0px 5px;
+            }
+        }
+        .links{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    .devices-row{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        label{
+            flex: 1;
+        }
+        .cancel{
+            background: #C82E19;
+            font-size:12px;
+            text-decoration: none;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include borderRadius(100%);
+            color: $white;
+        }
+    }
+
+    .card {
+        .item{
+          padding: 0px;
+          .item-inner{
+              padding: 0px;
+              margin: 0px;
+              .label {
+                  margin-right: 0px;
+              }
+          }
+        }
+    }
+}

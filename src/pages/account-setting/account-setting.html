@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-navbar>
+    <header>
+      <a class="small-logo" href="javascript:void(0)"><img src="../../assets/imgs/stari-logo.png" alt="Stari" title="Stari"
+        /></a>
+    </header>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div class="varified">
+    <div class="email-varify"><label>Email:</label><span>abc@example.com</span><div class="varifiy"><i class="fas fa-check"></i><span>Verified</span> </div></div>
+</div>
+  <ion-list>
+    <ion-card>
+      <ion-card-header>
+        <div class="subheader"><span>Change Password</span> <span class="hiddenpassword">*********</span></div>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form class="changePassword">
+            <div class="field-control">
+              <label class="form-title">Old Password</label>
+              <div class="field-wrap">
+                <input type="password" name="password" class="form-action" />
+              
+              </div>
+              <div class="error-msg" style="display:none;">Error message</div>
+            </div>
+            <div class="field-control">
+                <label class="form-title">New Password</label>
+                <div class="field-wrap">
+                  <input type="password" name="newpassword" class="form-action" />
+                </div>
+                <div class="error-msg" style="display:none;">Error message</div>
+              </div>
+            
+            <button ion-button> Change Password</button>
+          </form>
+
+      </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+          Change Language
+        </ion-card-header>
+  
+        <ion-card-content>
+          <form class="changelanguage">
+                <div class="change-language">
+                   <div class="country-name"><label>English</label><span class="flag">flag</span></div>
+                   <a href="javascript:void(0)" class="links">Change</a>
+                 </div>
+            </form>
+  
+        </ion-card-content>
+  
+      </ion-card>
+
+      <ion-card>
+          <ion-card-header>
+            Notifications
+          </ion-card-header>
+    
+          <ion-card-content>
+            <form class="notifications">
+                <ion-item>
+                    <ion-label>In-App Notification</ion-label>
+                    <ion-toggle  checked="true"></ion-toggle>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Opt form email Notification</ion-label>
+                    <ion-toggle  checked="false"></ion-toggle>
+                </ion-item>
+              </form>
+    
+          </ion-card-content>
+    
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+              My Devices
+            </ion-card-header>
+      
+            <ion-card-content>
+              <form class="notifications">
+                  <ion-item>
+                     <div class="devices-row">
+                         <label>MAC(This Device)</label>
+                         <a href="javascript:void(0)" class="cancel"><i class="fas fa-times"></i></a>
+                     </div>
+                  </ion-item>
+                  <ion-item>
+                      <div class="devices-row">
+                          <label>iPhone X</label>
+                          <a href="javascript:void(0)" class="cancel"><i class="fas fa-times"></i></a>
+                      </div>
+                   </ion-item>
+                </form>
+      
+            </ion-card-content>
+      
+          </ion-card>
+  
+
+
+  </ion-list>
+</ion-content>

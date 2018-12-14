@@ -1,0 +1,35 @@
+page-filter {
+    .search-wrap{
+        @include borderRadius(50px);
+        border:1px solid $white;
+        height: 40px;
+        background: $white;
+        position: relative;
+        margin: 0px 0px 15px;
+        .form-action{
+            border: 0px;
+            background: transparent;
+            color: #fff;
+            display: flex;
+            height: 40px;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 0px 40px 0px 10px;
+            box-sizing: border-box;
+            color: $Black;
+            font-size: 16px;
+            &::placeholder{
+                color: $text-color;
+            }
+        }
+      
+    }
+
+    .filter-sec{
+        display: flex;
+        .filter-by{
+            background: $bg-color;
+        }
+    }
+}

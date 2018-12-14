@@ -1,14 +1,754 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <header>
+      <a class="small-logo" href="javascript:void(0)"><img src="../../assets/imgs/stari-logo.png" alt="Stari" title="Stari"
+        /></a>
+        <div class="coins werew"  (click)="gotopurchaseVote()">
+          <img src="../../assets/imgs/coin-stack.svg"/>
+          <span class="total-coins">0</span>
+        </div>
+      <button class="search" (click)="gotoSearch()"><span class="fa fa-search"></span></button>
+      <div class="toggle-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </header>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="home-upper-block">
+    <span>Start your career as a player</span>
+    <a href="javascript:void(0)" class="toplinks button "><img src="../../assets/imgs/soccer-ball-variant.svg" (click)="gotoTalent()"/>Become a Talent</a>
+  </div>
+  <div class="scroll-block">
+    <h1>World Talents</h1>
+    <div class="scroll-wrap">
+      <ion-scroll scrollX="true">
+        <div class="scroll-inner-box">
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+               <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <!-- <i class="fa fa-arrow-up"></i> -->
+                  <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </ion-scroll>
+    </div>
+  </div>
+
+  <div class="scroll-block">
+    <h1>India Talents</h1>
+    <div class="scroll-wrap">
+      <ion-scroll scrollX="true">
+        <div class="scroll-inner-box">
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </ion-scroll>
+    </div>
+  </div>
+
+  <div class="scroll-block">
+    <h1>Israel Talents</h1>
+    <div class="scroll-wrap">
+      <ion-scroll scrollX="true">
+        <div class="scroll-inner-box">
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block" (click)="gotoTalentVideo()">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </ion-scroll>
+    </div>
+  </div>
+  <div class="scroll-block">
+    <h1>Newly Joined Talents</h1>
+    <div class="scroll-wrap">
+      <ion-scroll scrollX="true">
+        <div class="scroll-inner-box">
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                    <span>Vote</span>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block">
+            <div class="bg-img">
+              <div class="small-img"></div>
+            </div>
+            <div class="block-footer">
+              <div class="player-name">
+                <h3>John Smith</h3>
+                <div class="country-sec"><span class="circle">Ar</span><span class="country-name">Argentina</span></div>
+              </div>
+              <div class="player-position">
+                <div class="arrow-wrap">
+                  <i class="fa fa-arrow-up"></i>
+                </div>
+                <div class="dot-sing">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </ion-scroll>
+    </div>
+  </div>
 </ion-content>

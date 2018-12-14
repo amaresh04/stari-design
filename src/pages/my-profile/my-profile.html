@@ -1,0 +1,499 @@
+<ion-header>
+  <ion-navbar>
+    <header>
+      <a class="small-logo" href="javascript:void(0)"><img src="../../assets/imgs/stari-logo.png" alt="Stari" title="Stari"
+        /></a>
+      <div class="coins" (click)="gotopurchaseVote()">
+        <img src="../../assets/imgs/coin-stack.svg" />
+        <span class="total-coins">0</span>
+      </div>
+
+      <div class="toggle-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button class="search account-setting" (click)="gotoAccountSetting()"><i class="fas fa-cog"></i></button>
+    </header>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="player-profile">
+    <div class="player-img">
+      <img src="../../assets/imgs/player.jpg" />
+    </div>
+    <div class="player-details">
+      <h2>John Smith</h2>
+      <span class="countryName">Argentina</span>
+      <a href="javascript:void(0)" class="link-edit"><i class="fas fa-pencil-alt"></i>edit</a>
+    </div>
+  </div>
+  <div class="segment-sec">
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="Overview">
+        Overview
+      </ion-segment-button>
+      <ion-segment-button value="Reviews">
+        Reviewed
+      </ion-segment-button>
+
+      <ion-segment-button value="MyTeam">
+        My Team
+      </ion-segment-button>
+      <ion-segment-button value="MyTalent">
+        My Talent
+      </ion-segment-button>
+
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'Overview'">
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <label>Rank</label>
+            <div class="progress-wrap">
+              <div class="progress-bar">
+                <div class="rank">
+                  <i class="fa  fa-arrow-up"></i>
+                  <span>10,754</span>
+                </div>
+              </div>
+            </div>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <div class="card-title"> My Vote Stats </div>
+          <div class="total-votes"><small>Total Votes</small><strong>89</strong></div>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <label>Age</label>
+            <span>23(05-08-1996)</span>
+          </ion-item>
+          <ion-item>
+            <label>Height</label>
+            <span>6'1"</span>
+          </ion-item>
+          <ion-item>
+            <label>Weight</label>
+            <span>150lbs</span>
+          </ion-item>
+          <ion-item>
+            <label>Birth Country</label>
+            <span>Argentina</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          General Info
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <label>Age</label>
+            <span>23(05-08-1996)</span>
+          </ion-item>
+          <ion-item>
+            <label>Height</label>
+            <span>6'1"</span>
+          </ion-item>
+          <ion-item>
+            <label>Weight</label>
+            <span>150lbs</span>
+          </ion-item>
+          <ion-item>
+            <label>Birth Country</label>
+            <span>Argentina</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-list>
+
+
+    <ion-list *ngSwitchCase="'Reviews'">
+      <ion-card>
+        <div class="rev-list">
+          <div class="thumbnail">
+            <img src="../../assets/imgs/player.jpg">
+          </div>
+          <div class="rev-details">
+            <div class="rev-details-top">
+              <div class="rev-name">
+                <h5>Simon Gold</h5>
+                <span class="countryName">Argentina</span>
+              </div>
+              <div class="rev-date">
+                <span>12-1-18</span>
+              </div>
+
+            </div>
+            <div class="rev-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+        </div>
+
+        <div class="rev-list">
+          <div class="thumbnail">
+            <img src="../../assets/imgs/player.jpg">
+          </div>
+          <div class="rev-details">
+            <div class="rev-details-top">
+              <div class="rev-name">
+                <h5>Simon Gold</h5>
+                <span class="countryName">Argentina</span>
+              </div>
+              <div class="rev-date">
+                <span>12-1-18</span>
+              </div>
+
+            </div>
+            <div class="rev-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+        </div>
+
+        <div class="rev-list">
+          <div class="thumbnail">
+            <img src="../../assets/imgs/player.jpg">
+          </div>
+          <div class="rev-details">
+            <div class="rev-details-top">
+              <div class="rev-name">
+                <h5>Simon Gold</h5>
+                <span class="countryName">Argentina</span>
+              </div>
+              <div class="rev-date">
+                <span>12-1-18</span>
+              </div>
+
+
+            </div>
+            <div class="rev-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+        </div>
+
+
+
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'MyTeam'">
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <div class="total-votes-sec">
+              <div class="numbers-votes">475</div>
+              <small class="small">Total Votes</small>
+              <a class="vote-btn total_votes" href="javascript:void(0)">Purchase Votes</a>
+            </div>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <div class="votes-block">
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="../../assets/imgs/player.jpg">
+                </div>
+                <div class="player-details">
+                  <h2>John Smith</h2>
+                  <span class="countryName">Stari Acadmy</span>
+                </div>
+                <div class="arrow">
+                  <div class="fas fa-angle-double-up"></div>
+
+                </div>
+
+              </div>
+              <div class="vote-sec">
+                <div class="my-vote"><small>My Votes</small></div>
+                <div class="vote-btn">
+                  <a class="my-votes-btn btn" href="javascript:void(0)"><span>11</span></a>
+                  <a class="total-vote-btn btn" href="javascript:void(0)"><span>200</span></a>
+                </div>
+                <div class="total-vote"><small>Total Votes</small></div>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="votes-block">
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="../../assets/imgs/player.jpg">
+                </div>
+                <div class="player-details">
+                  <h2>John Smith</h2>
+                  <span class="countryName">Stari Acadmy</span>
+                </div>
+                <div class="arrow">
+                  <i class="fas fa-angle-double-down"></i>
+                </div>
+
+              </div>
+              <div class="vote-sec">
+                <div class="my-vote"><small>My Votes</small></div>
+                <div class="vote-btn">
+                  <a class="my-votes-btn btn lightRed" href="javascript:void(0)"><span>11</span></a>
+                  <a class="total-vote-btn btn red " href="javascript:void(0)"><span>200</span></a>
+                </div>
+                <div class="total-vote"><small>Total Votes</small></div>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="votes-block">
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="../../assets/imgs/player.jpg">
+                </div>
+                <div class="player-details">
+                  <h2>John Smith</h2>
+                  <span class="countryName">Stari Acadmy</span>
+                </div>
+                <div class="arrow">
+                  <div class="fas fa-angle-double-up"></div>
+
+                </div>
+
+              </div>
+              <div class="vote-sec">
+                <div class="my-vote"><small>My Votes</small></div>
+                <div class="vote-btn">
+                  <a class="my-votes-btn btn" href="javascript:void(0)"><span>11</span></a>
+                  <a class="total-vote-btn btn" href="javascript:void(0)"><span>200</span></a>
+                </div>
+                <div class="total-vote"><small>Total Votes</small></div>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item>
+            <div class="votes-block">
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="../../assets/imgs/player.jpg">
+                </div>
+                <div class="player-details">
+                  <h2>John Smith</h2>
+                  <span class="countryName">Stari Acadmy</span>
+                </div>
+                <div class="arrow">
+                  <i class="fas fa-angle-double-down"></i>
+                </div>
+
+              </div>
+              <div class="vote-sec">
+                <div class="my-vote"><small>My Votes</small></div>
+                <div class="vote-btn">
+                  <a class="my-votes-btn btn lightRed" href="javascript:void(0)"><span>11</span></a>
+                  <a class="total-vote-btn btn red " href="javascript:void(0)"><span>200</span></a>
+                </div>
+                <div class="total-vote"><small>Total Votes</small></div>
+              </div>
+            </div>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-card>
+
+
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'MyTalent'">
+      <ion-card>
+        <ion-card-header (click)="toggleProfessional()">
+          <span [class]="iconsProfessional ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span>Professional Info
+        </ion-card-header>
+
+        <ion-card-content [class]="hideProfessional ? 'hide' : 'show'">
+          <ion-item>
+            <label>Age</label>
+            <span>23(05-08-1996)</span>
+          </ion-item>
+          <ion-item>
+            <label>Height</label>
+            <span>6'1"</span>
+          </ion-item>
+          <ion-item>
+            <label>Weight</label>
+            <span>150lbs</span>
+          </ion-item>
+          <ion-item>
+            <label>Birth Country</label>
+            <span>Argentina</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header (click)="toggleVoteStats()">
+          <div class="card-title"><span [class]="iconsVoteStats ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span> My
+            Vote Stats </div>
+          <div class="total-votes"><small>Total Votes</small><strong>89</strong></div>
+        </ion-card-header>
+
+        <ion-card-content [class]="hideVoteStats ? 'hide' : 'show'">
+          <ion-item>
+            <label>Age</label>
+            <span>23(05-08-1996)</span>
+          </ion-item>
+          <ion-item>
+            <label>Height</label>
+            <span>6'1"</span>
+          </ion-item>
+          <ion-item>
+            <label>Weight</label>
+            <span>150lbs</span>
+          </ion-item>
+          <ion-item>
+            <label>Birth Country</label>
+            <span>Argentina</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header (click)="toggleMyVideos()">
+          <span [class]="iconsMyVideos ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span> My Videos
+        </ion-card-header>
+
+        <ion-card-content [class]="hideMyVideos ? 'hide' : 'show'">
+          <ion-item>
+            <iframe width="100%" height="180" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+            <div class="video-title">Lorem ipsum</div>
+          </ion-item>
+
+        </ion-card-content>
+
+
+
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header (click)="togglePosition()">
+          <span [class]="iconsPosition ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span>Position
+        </ion-card-header>
+
+        <ion-card-content [class]="hidePosition ? 'hide' : 'show'">
+          <ion-item>
+            <div class="playground-img">
+              <div class="player-position player1"></div>
+              <div class="player-position player2"></div>
+              <div class="player-position player3"></div>
+              <div class="player-position player4"></div>
+              <div class="player-position player5"></div>
+              <div class="player-position player6"></div>
+              <div class="player-position player7 active-player"></div>
+              <div class="player-position player8"></div>
+              <div class="player-position player9"></div>
+              <div class="player-position player10"></div>
+              <div class="player-position player11"></div>
+            </div>
+          </ion-item>
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header (click)="toggleReviews()">
+          <span class="toggleIcons" [class]="iconsReviews ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span> Reviews
+        </ion-card-header>
+
+        <ion-card-content [class]="hideReviews ? 'hide' : 'show'">
+          <div class="rev-list">
+            <div class="thumbnail">
+              <img src="../../assets/imgs/player.jpg">
+            </div>
+            <div class="rev-details">
+              <div class="rev-details-top">
+                <div class="rev-name">
+                  <h5>Simon Gold</h5>
+                  <span class="countryName">Argentina</span>
+                </div>
+                <div class="rev-date">
+                  <span>12-1-18</span>
+                </div>
+
+              </div>
+              <div class="rev-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+
+
+    </ion-list>
+
+  </div>
+
+</ion-content>

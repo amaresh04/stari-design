@@ -1,0 +1,88 @@
+page-purchase-vote {
+    .purchase-block {
+        color: $white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        margin: 0px 0px 36px;
+        small{
+            font-size: 12px;
+        }
+        .vote-btn{
+            margin: 0px 0px 52px;
+            span{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            em{
+                font-size: 14px;
+                color: $text-color;
+                font-style: normal;
+                margin: 0px 5px;
+            }
+        }
+       
+    }
+    .purchase-middle{
+
+        .amount{
+            display:flex;
+            white-space: nowrap;
+            overflow-x: auto;
+            justify-content: space-around;
+            margin: 0px 0px 24px;
+            .votes{
+                @include borderRadius(40px);
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                line-height: 25px;
+                font-size: 12px;
+                color: $white;
+                background: transparent;
+                border:1px solid #fff;
+                min-width: 68px;
+                font-size: 14px;
+                text-decoration: none;
+                margin: 0px 5px;
+                &.active{
+                    background: $white;
+                    color: #333;
+                }
+                
+            }
+        }
+
+        .purchase-amount{
+            display: flex;
+            flex: 1;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 14px;
+            color:$white;
+            .or{
+                display: inline-block;
+                margin-bottom: 22px;
+                font-size: 14px;
+                color: $white;
+            }
+            .enter-amount{
+                border:0px;
+                text-align: center;
+                font-size: 14px;
+                margin:0px 0px 155px; 
+                color: #333;
+            }
+            .price-amount{
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 35px;
+            }
+           
+        }
+    }
+}

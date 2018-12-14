@@ -1,0 +1,304 @@
+page-become-talent-complete {
+    &.direction_rtl {
+        direction: rtl;
+        .back-arrow {
+            left: auto !important;
+            right: 35px;
+            transform: rotate(-180deg);
+        }
+        h1:after {
+            right: 0px;
+            left: auto !important;
+        }
+        .field-control-wrap {
+            display: flex;
+            .field-control {
+                &:first-child {
+                    margin-right: 0px !important;
+                    margin-left: 35px;
+                }
+            }
+        }
+   /***--Radio Btn ***/
+        .radio-box {
+            [type="radio"]:checked,
+            [type="radio"]:not(:checked) {
+                position: absolute;
+                right: -9999px;
+                left: auto !important;
+            }
+            [type="radio"]:checked+label,
+            [type="radio"]:not(:checked)+label {
+                position: relative;
+                padding-right:28px;
+                padding-left: 0px !important;
+              
+            }
+            [type="radio"]:checked+label:before,
+            [type="radio"]:not(:checked)+label:before {
+                content: '';
+                position: absolute;
+                right: 0;
+                left:  auto !important;
+            }
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+                right: 4px;
+                left: auto !important;
+               
+            }
+        }
+        /*---/ Custom radio btn --- */
+    }
+    &.direction_ltr {
+        direction: ltr;
+    }
+    font-family: 'Dosis',
+    sans-serif;
+    color:$white;
+    /*--- header --- */
+    .toolbar-background {
+        background: $bg_color;
+    }
+    .logo-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .logo {
+            display: inline-block;
+            max-width: 142px;
+            width: 100%;
+            img {
+                max-width: 142px;
+                width: 100%;
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .back-arrow {
+            position: absolute; // font-size: 40px;
+            // margin-top: -20px;
+            font-size: 30px;
+            margin-top: -15px;
+            color: $white;
+            top: 50%;
+            left: 35px;
+            text-decoration: none;
+        }
+    }
+    /*--- /header --- */
+
+          /*---- Top navigate radio header ----*/
+          .radiowrap {
+            background: #aaa;
+            position: fixed;
+            width: 100%;
+            box-sizing: border-box;
+            left: 0px;
+            top: 91px;
+            padding: 10px 0px;
+            z-index: 9;
+            .small-circle {
+                display: inline-block;
+                border-radius: 100%;
+                border: 4px solid #fff;
+                width: 20px;
+                height: 20px;
+                background: $white;
+                margin: 0px 9%;
+                &.processing {
+                    background: #f79a2b;
+                }
+                &.process-completed {
+                    background: green;
+                    position: relative;
+                    border: 0px;
+                    &::before {
+                        content: '';
+                        left: 7px;
+                        top: 2px;
+                        position: absolute;
+                        width: 5px;
+                        height: 10px;
+                        border-width: 2px;
+                        border-top-width: 0;
+                        border-left-width: 0;
+                        border-style: solid;
+                        border-color: $white;
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+     
+        /*---- /Top navigate radio header ----*/
+
+    /*--- content --- */
+    .scroll-content {
+        background: url(../../assets/imgs/Player-mesh-gradient.png) right 35px no-repeat #444444;
+        background-size: auto 100%;
+        h1 {
+            font-size: 26px;
+            color: $white;
+            font-weight: 700;
+            padding: 0px 0px 15px;
+            margin: 20px 0px 20px !important;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            &:after {
+                content: '';
+                width: 100%;
+                height: 4px;
+                background: #2E89AC;
+                border-radius: 4px;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                max-width: 60px;
+            }
+        }
+
+
+
+        .becomeTalentComplete {
+            margin: 50px 0px 10px;
+        }
+        .field-control-wrap {
+            display: flex;
+            .field-control {
+                &:first-child {
+                    margin-right: 35px;
+                }
+            }
+        }
+        .field-control {
+            .item {
+                background: transparent;
+                border: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 0px;
+                text-align: left;
+                align-items: flex-start;
+                .item-inner {
+                    border: 0px;
+                    padding: 0px;
+                    .label {
+                        font-size: 16px;
+                        color: #ffffff;
+                        margin: 0px 0px 10px;
+                        display: flex;
+                    }
+                    .select {
+                        width: 100%;
+                        margin: 0px;
+                        max-width: 100%;
+                        padding: 10px 10px;
+                        border: 1px solid #707070;
+                        font-size: 16px;
+                        background: $white;
+                        height: 49px;
+                        box-sizing: border-box;
+                        width: 100%;
+                        color: $bg_color !important;
+                        align-items: center;
+                    }
+                }
+            }
+            margin: 0px 0px 15px;
+            .form-title {
+                font-size: 16px;
+                color: $white;
+                margin: 0px 0px 10px;
+                display: block;
+            }
+            .form-action {
+                border: 1px solid #707070;
+                font-size: 16px;
+                color: $white;
+                padding: 10px;
+                height: 49px;
+                box-sizing: border-box;
+                width: 100%;
+                color: $bg_color;
+            }
+        }
+
+        /* Custom radio btn */
+        .radio-box {
+            margin:15px 0px;
+            [type="radio"]:checked,
+            [type="radio"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            [type="radio"]:checked+label,
+            [type="radio"]:not(:checked)+label {
+                position: relative;
+                padding-left: 28px;
+                cursor: pointer;
+                line-height: 20px;
+                display: inline-block;
+                color: $white;
+                font-size: 16px;
+                margin: 0px;
+                font-weight: 400;
+            }
+            [type="radio"]:checked+label:before,
+            [type="radio"]:not(:checked)+label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #000;
+                border-radius: 100%;
+                background: #000;
+                box-sizing: border-box;
+            }
+            [type="radio"]:checked+label:before {
+                border: 2px solid #000;
+            }
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+                content: '';
+                width: 12px;
+                height: 12px;
+                background: $white;
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                border-radius: 100%;
+                -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            [type="radio"]:not(:checked)+label:after {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+            [type="radio"]:checked+label:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+        /*---/ Custom radio btn --- */
+    }
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            color: $white;
+            text-decoration: none;
+            display: block;
+        }
+    }
+}

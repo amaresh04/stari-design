@@ -1,0 +1,205 @@
+page-my-profile {
+    /* ---- Direction ---*/
+    &.direction_rtl {
+        direction: rtl;
+        .search {
+            right: auto !important;
+            left: 10px;
+        }
+        h1:after {
+            right: 0px;
+            left: auto !important;
+        }
+        .card {
+            .btn-secondry {
+                right: auto !important;
+                left: 15px;
+            }
+        }
+    }
+    &.direction_ltr {
+        direction: ltr;
+    }
+    .segment-sec {
+        margin: 0px 0px 20px;
+    }
+    .card {
+        .item {
+            padding: 0px;
+            .item-inner {
+                padding: 0px;
+                .label {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    .countryName {
+        font-size: 16px;
+    }
+    .link-edit {
+        max-width: 57px;
+        margin: 5px 0px;
+        .fa-pencil-alt {
+            font-size: 11px;
+            margin: 0px 2px;
+        }
+    }
+    .numbers-votes {
+        font-size: 30px;
+        color: $text-hover-color;
+    }
+    .total-votes-sec {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .small {
+            display: inline-block;
+            margin: 5px 0px 10px;
+        }
+    }
+    .card-header {
+        .fa {
+            font-size: 20px;
+            margin: 0px 3px;
+        }
+    }
+    .card {
+        .show {
+            .item {
+                background: transparent;
+                color: $white;
+                .item-inner {
+                    padding: 0px;
+                    .label {
+                        margin: 0px;
+                        label {
+                            min-width: 130px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .video-title {
+        font-size: 16px;
+        padding: 5px 0px 0px;
+    }
+    iframe {
+        border: 0px;
+    }
+    .card-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .card-title {
+            flex: 1;
+        }
+        .total-votes {
+            small {
+                font-size: 12px;
+                margin: 0px 5px;
+            }
+        }
+    }
+    .playground-img {
+        background: url(../../assets/imgs/soccer-filed.png) center center no-repeat;
+        width: 128px;
+        height: 220px;
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+        position: relative;
+        .player-position {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            @include borderRadius(10px);
+            background: $white;
+            &.active-player {
+                background: green;
+            }
+        }
+        .player1 {
+            left: 10%;
+            top: 10%;
+        }
+        .player2 {
+            left: 15%;
+            top: 60%;
+        }
+        .player3 {
+            right: 10%;
+            top: 10%;
+        }
+        .player4 {
+            left: 30%;
+            top: 20%;
+        }
+        .player5 {
+            left: 80%;
+            top: 80%;
+        }
+        .player6 {
+            left: 60%;
+            top: 90%;
+        }
+        .player7 {
+            right: 25%;
+            top: 40%
+        }
+        .player8 {
+            right: 75%;
+            top: 80%;
+        }
+        .player9 {
+            left: 65%;
+            top: 55%;
+        }
+        .player10 {
+            right: 45%;
+            top: 45%;
+        }
+        .player11 {
+            left: 25%;
+            top: 75%;
+        }
+    }
+    .progress-wrap {
+        display: flex;
+        height: 45px;
+        .progress-bar {
+            position: relative;
+            width: 100%;
+            height: 3px;
+            background: $white;
+            border-radius: 3px;
+        }
+        .rank {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            top: -9px;
+            right: 25px;
+            .fa {
+                font-size: 14px;
+                border: 1px solid $text-color;
+                border-radius: 100%;
+                width: 20px;
+                height: 20px;
+                line-height: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $white;
+                color: $Black;
+                margin: 0px 0px 5px;
+            }
+        }
+    }
+}

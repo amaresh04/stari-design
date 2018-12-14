@@ -1,0 +1,200 @@
+<ion-header>
+  <ion-navbar>
+    <header>
+      <a class="small-logo" href="javascript:void(0)"><img src="../../assets/imgs/stari-logo.png" alt="Stari" title="Stari"
+        /></a>
+      <button class="search"><span class="fa fa-search"></span></button>
+    </header>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="player-profile">
+    <div class="player-img">
+      <img src="../../assets/imgs/player.jpg" />
+    </div>
+    <div class="player-details">
+      <h2>John Smith</h2>
+      <span class="countryName">Argentina</span>
+    </div>
+  </div>
+  <div class="segment-sec">
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="Overview">
+        Overview
+      </ion-segment-button>
+      <ion-segment-button value="Videos">
+        Videos
+      </ion-segment-button>
+      <ion-segment-button value="Reviews">
+        Reviews
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'Overview'">
+      <ion-card>
+        <ion-card-header>
+          General Info
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <label>Age</label>
+            <span>23(05-08-1996)</span>
+          </ion-item>
+          <ion-item>
+            <label>Height</label>
+            <span>6'1"</span>
+          </ion-item>
+          <ion-item>
+            <label>Weight</label>
+            <span>150lbs</span>
+          </ion-item>
+          <ion-item>
+            <label>Birth Country</label>
+            <span>Argentina</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+      <ion-card>
+         <button class="btn-secondry"><span class="fa fa-arrow-circle-up"></span>Vote</button> 
+        <ion-card-header>
+          Professional Info
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <label>Age</label>
+            <span>23(05-08-1996)</span>
+          </ion-item>
+          <ion-item>
+            <label>Height</label>
+            <span>6'1"</span>
+          </ion-item>
+          <ion-item>
+            <label>Weight</label>
+            <span>150lbs</span>
+          </ion-item>
+          <ion-item>
+            <label>Birth Country</label>
+            <span>Argentina</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          Position
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            <label>Age</label>
+            <span>23(05-08-1996)</span>
+          </ion-item>
+          <ion-item>
+            <label>Height</label>
+            <span>6'1"</span>
+          </ion-item>
+          <ion-item>
+            <label>Weight</label>
+            <span>150lbs</span>
+          </ion-item>
+          <ion-item>
+            <label>Birth Country</label>
+            <span>Argentina</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+          <ion-item>
+            <label>ABC</label>
+            <span>Xyz</span>
+          </ion-item>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Videos'">
+        <ion-card>
+            <ion-card-content>
+              <ion-item>
+                <label>Age</label>
+                <span>23(05-08-1996)</span>
+              </ion-item>
+              <ion-item>
+                <label>Height</label>
+                <span>6'1"</span>
+              </ion-item>
+              <ion-item>
+                <label>Weight</label>
+                <span>150lbs</span>
+              </ion-item>
+              <ion-item>
+                <label>Birth Country</label>
+                <span>Argentina</span>
+              </ion-item>
+              <ion-item>
+                <label>ABC</label>
+                <span>Xyz</span>
+              </ion-item>
+              <ion-item>
+                <label>ABC</label>
+                <span>Xyz</span>
+              </ion-item>
+    
+            </ion-card-content>
+    
+          </ion-card>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Reviews'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h5>Lusfsfsdna</h5>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>213213</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>4234234</h2>
+      </ion-item>
+
+    </ion-list>
+  </div>
+
+</ion-content>

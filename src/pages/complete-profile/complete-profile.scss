@@ -1,0 +1,139 @@
+page-complete-profile {
+
+    /* ---- Direction ---*/
+    &.direction_rtl {
+        direction: rtl;
+        .search {
+            right: auto !important;
+            left: 10px;
+        }
+        h1:after {
+            right: 0px;
+            left: auto !important;
+        }
+        .card {
+            .btn-secondry {
+                right: auto !important;
+                left: 15px;
+            }
+        }
+    }
+    &.direction_ltr {
+        direction: ltr;
+    }
+    .segment-sec {
+        margin: 0px 0px 20px;
+    }
+    .card {
+        .item{
+            .item-inner{
+              padding: 0px;
+              .label {
+                  margin: 0px;
+                  iframe{
+                      border:0px;
+                  }
+              }
+            }
+        }
+        .btn-secondry {
+            position: fixed;
+            right: 15px;
+            top: 50%;
+        }
+    }
+    .countryName {
+        font-size: 16px;
+    }
+    .link-edit{
+        max-width: 57px;
+        margin:5px 0px;
+    }
+    .video-title{
+        font-size: 16px;
+        padding: 5px 0px 0px;
+    }
+
+    /******** 06-12-2018 *********/
+    .btn-secondry{
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        z-index:5;
+    }
+
+    .playground-img{
+        background: url(../../assets/imgs/soccer-filed.png) center center no-repeat;
+        width: 128px;
+        height: 220px;
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+        position: relative;
+        .player-position{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            @include borderRadius(10px);
+            background: $white;
+            &.active-player{
+                background: green;
+            }
+        }
+
+        .player1{
+           left: 10%;
+           top: 10%;
+        }
+
+        .player2{
+            left: 15%;
+            top: 60%;
+         }
+
+         .player3{
+            right: 10%;
+            top: 10%;
+         }
+
+         .player4{
+            left:30%;
+            top:20%;
+         }
+
+         .player5{
+            left:80%;
+            top: 80%;
+         }
+
+         .player6{
+            left:60%;
+            top: 90%;
+         }
+
+         .player7{
+            right: 25%;
+            top: 40%
+         }
+
+         .player8{
+            right:75%;
+            top: 80%;
+         }
+
+         .player9{
+            left:65%;
+            top: 55%;
+         }
+
+         .player10{
+            right:45%;
+            top:45%;
+         }
+         .player11{
+            left:25%;
+            top:75%;
+         }
+    }
+
+
+}

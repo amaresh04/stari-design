@@ -1,0 +1,44 @@
+page-live {
+    .player-name {
+        color: $white;
+        display: flex;
+        justify-content: baseline;
+        padding: 10px 0px;
+        border-bottom: 1px solid $text-color;
+
+        h3 {
+            font-size: 21px;
+            margin: 0px 0px 5px !important;
+            font-weight: 700;
+            color: $white;
+        }
+        .video-sec {
+            flex: 1;
+        }
+    }
+    .video-block {
+        overflow: hidden;
+        position: relative;
+        margin: 0px 0px 20px;
+        
+    }
+    .text-content {
+        color: $white;
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    iframe {
+        border: 0px;
+    }
+    .card{
+        .item{
+            padding: 0px;
+            .item-inner{
+                padding: 0px;
+                .label{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

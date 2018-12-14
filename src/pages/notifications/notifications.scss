@@ -1,0 +1,45 @@
+page-notifications {
+     .list-icon{
+         @include borderRadius(20px);
+         width: 26px;
+         height: 26px;
+         background: $white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 14px;
+         color: #333;
+        
+     }
+     .list-content{
+         padding: 0px 15px;
+         font-size: 14px;
+
+     }
+
+     .card{
+        margin: 0px 0px 5px;
+        height: 55px;
+        padding: 0px 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;;
+         .item{
+            border:0px;
+            &:last-child{
+                border-bottom: 0px;
+            }
+             .item-inner{
+                padding: 0px;
+                .label {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0px;
+                }
+             }
+            
+
+         }
+     }
+}

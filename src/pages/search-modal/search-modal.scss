@@ -1,0 +1,176 @@
+page-search-modal {
+    &.direction_rtl {
+        direction: rtl;
+        .search {
+            right: auto !important;
+            left: 15px;
+        }
+        .back-button-icon {
+            transform: rotate(-180deg);
+            margin-left: 5px;
+        }
+    }
+    &.direction_ltr {
+        direction: ltr;
+    }
+    .list {
+        margin: 0px;
+        .item {
+            background: transparent;
+            padding: 0px;
+            border: 0px !important;
+            margin: 0px 0px 20px;
+            .item-inner {
+                background: transparent;
+                padding: 0px;
+                border: 0px;
+                .label {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    .search-block{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        background:$Black;
+    }
+    .search-wrap {
+        @include borderRadius(50px);
+        border: 1px solid $white;
+        height: 30px;
+        background: $white;
+        position: relative;
+        margin: 0px 10px;
+        box-sizing: border-box;
+        width: 100%;
+        .form-action {
+            border: 0px;
+            background: transparent;
+            color: #fff;
+            display: flex;
+            height: 30px;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            color: $Black;
+            font-size: 14px;
+            &::placeholder {
+                color: $text-color;
+            }
+        }
+        button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            color: $text-color;
+            background: transparent;
+            font-size: 20px;
+            margin-top: -11px;
+            padding: 0px;
+            width: 30px;
+            height: 20px;
+        }
+    }
+    .filter-sec {
+        display: flex;
+        .filter-by {
+            background: $bg-color;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            label{
+                color:$white;
+                font-size: 12px;
+                padding: 20px 15px;
+            }
+            .filter-title {
+                display: flex;
+                flex-direction: column;
+                a{
+                    color:$white;
+                    font-size: 16px;
+                    text-decoration: none;
+                    padding:8px 15px;
+                    &.active{
+                        background: $dark;
+                    }
+                }
+            }
+        }
+        .search-filter {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 140px);
+            background: $dark;
+            .item {
+                background: transparent;
+                color: $white;
+                font-size: 16px;
+                border:0px;
+                .item-inner{
+                    font-size: 16px;
+                    border:0px;
+                    .label{
+                        display: flex;
+                        .country-name{
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+            /* ----- Checkbox ----*/
+            .item-checkbox{
+                padding: 0px;
+                font-size: 16px;
+                color: $white;
+                background: transparent;
+                .checkbox {
+                    margin: 8px 10px !important;
+                    .item-cover{
+                        padding: 0px;
+                    }
+                    .checkbox-checked{
+                        background: #000;
+                        border: 0px;
+                        .checkbox-inner {
+                            left: 6px;
+                            top: 3px;
+                            position: absolute;
+                            width: 4px;
+                            height: 8px;
+                            border-width: 1px;
+                            border-top-width: 0;
+                            border-left-width: 0;
+                            border-style: solid;
+                            border-color: #fff;
+                            -webkit-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                .checkbox-icon{
+                   width: 15px;
+                   height: 15px;
+                   box-sizing: border-box;
+                   border: 0px;
+                }
+                .item-inner{
+                    border: 0px;
+                    padding: 0px;
+                }
+
+        }
+
+         /* ----- /Checkbox ----*/
+
+ 
+}

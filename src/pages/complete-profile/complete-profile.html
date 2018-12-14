@@ -1,0 +1,246 @@
+<button class="btn-secondry" (click)="gotoVote()"><span class="fa fa-arrow-circle-up"></span>Vote</button>
+<ion-header>
+    <ion-navbar>
+      <header>
+        <a class="small-logo" href="javascript:void(0)"><img src="../../assets/imgs/stari-logo.png" alt="Stari" title="Stari"
+          /></a>
+          <button class="search"><span class="fa fa-search"></span></button>
+      </header>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <div class="player-profile">
+      <div class="player-img">
+        <img src="../../assets/imgs/player.jpg" />
+      </div>
+      <div class="player-details">
+        <h2>John Smith</h2>
+        <span class="countryName">Argentina</span>
+      </div>
+    </div>
+    <div class="segment-sec">
+      <ion-segment [(ngModel)]="pet">
+        <ion-segment-button value="Overview" segment-activated>
+          Overview
+        </ion-segment-button>
+        <ion-segment-button value="Videos">
+           Videos
+          </ion-segment-button>
+        <ion-segment-button value="Reviews">
+          Reviewed
+        </ion-segment-button>
+  
+        
+      </ion-segment>
+    </div>
+  
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'Overview'">
+        <ion-card>
+          <ion-card-header>
+            General Info
+          </ion-card-header>
+  
+          <ion-card-content>
+            <ion-item>
+              <label>Age</label>
+              <span>23(05-08-1996)</span>
+            </ion-item>
+            <ion-item>
+              <label>Height</label>
+              <span>6'1"</span>
+            </ion-item>
+            <ion-item>
+              <label>Weight</label>
+              <span>150lbs</span>
+            </ion-item>
+            <ion-item>
+              <label>Birth Country</label>
+              <span>Argentina</span>
+            </ion-item>
+            <ion-item>
+              <label>ABC</label>
+              <span>Xyz</span>
+            </ion-item>
+            <ion-item>
+              <label>ABC</label>
+              <span>Xyz</span>
+            </ion-item>
+  
+          </ion-card-content>
+  
+        </ion-card>
+        <ion-card>
+         
+          <ion-card-header>
+            Professional Info
+          </ion-card-header>
+  
+          <ion-card-content>
+            <ion-item>
+              <label>Age</label>
+              <span>23(05-08-1996)</span>
+            </ion-item>
+            <ion-item>
+              <label>Height</label>
+              <span>6'1"</span>
+            </ion-item>
+            <ion-item>
+              <label>Weight</label>
+              <span>150lbs</span>
+            </ion-item>
+            <ion-item>
+              <label>Birth Country</label>
+              <span>Argentina</span>
+            </ion-item>
+            <ion-item>
+              <label>ABC</label>
+              <span>Xyz</span>
+            </ion-item>
+            <ion-item>
+              <label>ABC</label>
+              <span>Xyz</span>
+            </ion-item>
+  
+          </ion-card-content>
+  
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            Position
+          </ion-card-header>
+  
+          <ion-card-content>
+            <ion-item>
+              <div class="playground-img">
+                <div class="player-position player1"></div>
+                <div class="player-position player2"></div>
+                <div class="player-position player3"></div>
+                <div class="player-position player4"></div>
+                <div class="player-position player5"></div>
+                <div class="player-position player6"></div>
+                <div class="player-position player7 active-player"></div>
+                <div class="player-position player8"></div>
+                <div class="player-position player9"></div>
+                <div class="player-position player10"></div>
+                <div class="player-position player11"></div>
+              </div>
+            </ion-item>
+          
+  
+          </ion-card-content>
+  
+        </ion-card>
+  
+      </ion-list>
+  
+      <ion-list *ngSwitchCase="'Videos'">
+          <ion-card>
+            <ion-card-content>
+              <ion-item>
+                <iframe width="100%" height="180" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+               <div class="video-title">Lorem ipsum</div>
+              </ion-item>
+              
+            </ion-card-content>
+    
+          </ion-card>
+          <ion-card>
+            <ion-card-content>
+              <ion-item>
+                <iframe width="100%" height="180" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+               <div class="video-title">Lorem ipsum</div>
+              </ion-item>
+              
+            </ion-card-content>
+    
+          </ion-card>
+          
+    
+        </ion-list>
+    
+  
+      <ion-list *ngSwitchCase="'Reviews'">
+        <ion-card>
+          <div class="rev-list">
+            <div class="thumbnail">
+              <img src="../../assets/imgs/player.jpg">
+            </div>
+            <div class="rev-details">
+              <div class="rev-details-top">
+                <div class="rev-name">
+                  <h5>Simon Gold</h5>
+                  <span class="countryName">Argentina</span>
+                </div>
+                <div class="rev-date">
+                  <span>12-1-18</span>
+                </div>
+  
+              </div>
+              <div class="rev-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.</div>
+            </div>
+          </div>
+  
+          <div class="rev-list">
+            <div class="thumbnail">
+              <img src="../../assets/imgs/player.jpg">
+            </div>
+            <div class="rev-details">
+              <div class="rev-details-top">
+                <div class="rev-name">
+                  <h5>Simon Gold</h5>
+                  <span class="countryName">Argentina</span>
+                </div>
+                <div class="rev-date">
+                  <span>12-1-18</span>
+                </div>
+  
+              </div>
+              <div class="rev-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.</div>
+            </div>
+          </div>
+  
+          <div class="rev-list">
+            <div class="thumbnail">
+              <img src="../../assets/imgs/player.jpg">
+            </div>
+            <div class="rev-details">
+              <div class="rev-details-top">
+                <div class="rev-name">
+                  <h5>Simon Gold</h5>
+                  <span class="countryName">Argentina</span>
+                </div>
+                <div class="rev-date">
+                  <span>12-1-18</span>
+                </div>
+  
+              </div>
+              <div class="rev-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.</div>
+            </div>
+          </div>
+  
+  
+  
+        </ion-card>
+      </ion-list>
+  
+    
+    
+    </div>
+  
+  </ion-content>
