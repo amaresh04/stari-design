@@ -238,9 +238,9 @@ body {
     /*---- Segment ---*/
     .segment {
         .segment-button {
-            color: $text-color;
+            color: rgba(255,255,255,.6);
             text-transform: capitalize;
-            font-size: 16px;
+            font-size: 14px;
             border: 0px;
             border-radius: 0px !important;
             border-bottom: 1px solid $text-color;
@@ -444,7 +444,7 @@ body {
         @include borderRadius(10px);
         position: relative;
         .card-header {
-            font-size: 22px;
+            font-size:18px;
             color: $white;
             margin: 0px;
             padding: 0px 0px 10px;
@@ -949,10 +949,7 @@ body {
         }
     }
     /*---- /Segment ---*/
-    .btn-secondry {
-        background: -webkit-linear-gradient(to right, #34D0B2, #23A455);
-        background: linear-gradient(to right, #34D0B2, #23A455);
-    }
+    
     .footer {
         .toolbar-background {
             background: -webkit-linear-gradient(to right, $green, $DarkGreen);

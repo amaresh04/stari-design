@@ -48,10 +48,30 @@ page-complete-profile {
     .link-edit{
         max-width: 57px;
         margin:5px 0px;
+        .fas{
+            font-size:12px;
+            margin: 0px 3px;
+        }
     }
     .video-title{
         font-size: 16px;
         padding: 5px 0px 0px;
+    }
+    .toplinks{
+        @include borderRadius(50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-decoration: none;
+        width: 314px;
+        margin: 36px auto;
+        img{
+                width: 20px;
+                margin: 0px 10px;
+                -webkit-filter: brightness(0) invert(1);
+                filter: brightness(0) invert(1);
+        }
     }
 
     /******** 06-12-2018 *********/

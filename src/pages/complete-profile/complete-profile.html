@@ -17,6 +17,7 @@
       <div class="player-details">
         <h2>John Smith</h2>
         <span class="countryName">Argentina</span>
+        <a class="link-edit" href="javascript:void(0)"><i class="fas fa-pencil-alt"></i>edit</a>
       </div>
     </div>
     <div class="segment-sec">
@@ -37,6 +38,7 @@
   
     <div [ngSwitch]="pet">
       <ion-list *ngSwitchCase="'Overview'">
+        <a class="toplinks button " href="javascript:void(0)"><img src="../../assets/imgs/soccer-ball-variant.svg">Become a Talent</a>
         <ion-card>
           <ion-card-header>
             General Info

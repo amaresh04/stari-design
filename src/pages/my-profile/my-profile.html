@@ -343,13 +343,13 @@
 
     </ion-list>
 
-    <ion-list *ngSwitchCase="'MyTalent'">
+    <ion-list class="my-talent" *ngSwitchCase="'MyTalent'">
       <ion-card>
         <ion-card-header (click)="toggleProfessional()">
           <span [class]="iconsProfessional ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span>Professional Info
         </ion-card-header>
 
-        <ion-card-content [class]="hideProfessional ? 'hide' : 'show'">
+        <ion-card-content [class]="hideProfessional ? 'hide' : 'show content-block'">
           <ion-item>
             <label>Age</label>
             <span>23(05-08-1996)</span>
@@ -386,7 +386,7 @@
           <div class="total-votes"><small>Total Votes</small><strong>89</strong></div>
         </ion-card-header>
 
-        <ion-card-content [class]="hideVoteStats ? 'hide' : 'show'">
+        <ion-card-content [class]="hideVoteStats ? 'hide' : 'show content-block'">
           <ion-item>
             <label>Age</label>
             <span>23(05-08-1996)</span>
@@ -421,7 +421,7 @@
           <span [class]="iconsMyVideos ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span> My Videos
         </ion-card-header>
 
-        <ion-card-content [class]="hideMyVideos ? 'hide' : 'show'">
+        <ion-card-content [class]="hideMyVideos ? 'hide' : 'show content-block'">
           <ion-item>
             <iframe width="100%" height="180" src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </iframe>
@@ -439,7 +439,7 @@
           <span [class]="iconsPosition ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span>Position
         </ion-card-header>
 
-        <ion-card-content [class]="hidePosition ? 'hide' : 'show'">
+        <ion-card-content [class]="hidePosition ? 'hide' : 'show content-block'">
           <ion-item>
             <div class="playground-img">
               <div class="player-position player1"></div>
@@ -464,7 +464,7 @@
           <span class="toggleIcons" [class]="iconsReviews ? 'fa fa-chevron-right' : 'fa fa-chevron-down'"></span> Reviews
         </ion-card-header>
 
-        <ion-card-content [class]="hideReviews ? 'hide' : 'show'">
+        <ion-card-content [class]="hideReviews ? 'hide' : 'show content-block'">
           <div class="rev-list">
             <div class="thumbnail">
               <img src="../../assets/imgs/player.jpg">
