@@ -19,7 +19,7 @@ page-become-talent-complete {
                 }
             }
         }
-   /***--Radio Btn ***/
+        /***--Radio Btn ***/
         .radio-box {
             [type="radio"]:checked,
             [type="radio"]:not(:checked) {
@@ -30,22 +30,20 @@ page-become-talent-complete {
             [type="radio"]:checked+label,
             [type="radio"]:not(:checked)+label {
                 position: relative;
-                padding-right:28px;
+                padding-right: 28px;
                 padding-left: 0px !important;
-              
             }
             [type="radio"]:checked+label:before,
             [type="radio"]:not(:checked)+label:before {
                 content: '';
                 position: absolute;
                 right: 0;
-                left:  auto !important;
+                left: auto !important;
             }
             [type="radio"]:checked+label:after,
             [type="radio"]:not(:checked)+label:after {
                 right: 4px;
                 left: auto !important;
-               
             }
         }
         /*---/ Custom radio btn --- */
@@ -89,53 +87,50 @@ page-become-talent-complete {
         }
     }
     /*--- /header --- */
-
-          /*---- Top navigate radio header ----*/
-          .radiowrap {
-            background: #aaa;
-            position: fixed;
-            width: 100%;
-            box-sizing: border-box;
-            left: 0px;
-            top: 91px;
-            padding: 10px 0px;
-            z-index: 9;
-            .small-circle {
-                display: inline-block;
-                border-radius: 100%;
-                border: 4px solid #fff;
-                width: 20px;
-                height: 20px;
-                background: $white;
-                margin: 0px 9%;
-                &.processing {
-                    background: #f79a2b;
-                }
-                &.process-completed {
-                    background: green;
-                    position: relative;
-                    border: 0px;
-                    &::before {
-                        content: '';
-                        left: 7px;
-                        top: 2px;
-                        position: absolute;
-                        width: 5px;
-                        height: 10px;
-                        border-width: 2px;
-                        border-top-width: 0;
-                        border-left-width: 0;
-                        border-style: solid;
-                        border-color: $white;
-                        -webkit-transform: rotate(45deg);
-                        transform: rotate(45deg);
-                    }
+    /*---- Top navigate radio header ----*/
+    .radiowrap {
+        background: #aaa;
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        left: 0px;
+        top: 91px;
+        padding: 10px 0px;
+        z-index: 9;
+        .small-circle {
+            display: inline-block;
+            border-radius: 100%;
+            border: 4px solid #fff;
+            width: 20px;
+            height: 20px;
+            background: $white;
+            margin: 0px 9%;
+            &.processing {
+                background: #f79a2b;
+            }
+            &.process-completed {
+                background: green;
+                position: relative;
+                border: 0px;
+                &::before {
+                    content: '';
+                    left: 7px;
+                    top: 2px;
+                    position: absolute;
+                    width: 5px;
+                    height: 10px;
+                    border-width: 2px;
+                    border-top-width: 0;
+                    border-left-width: 0;
+                    border-style: solid;
+                    border-color: $white;
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
                 }
             }
         }
-     
-        /*---- /Top navigate radio header ----*/
-
+    }
+    /*---- /Top navigate radio header ----*/
     /*--- content --- */
     .scroll-content {
         background: url(../../assets/imgs/Player-mesh-gradient.png) right 35px no-repeat #444444;
@@ -161,9 +156,6 @@ page-become-talent-complete {
                 max-width: 60px;
             }
         }
-
-
-
         .becomeTalentComplete {
             margin: 50px 0px 10px;
         }
@@ -228,10 +220,9 @@ page-become-talent-complete {
                 color: $bg_color;
             }
         }
-
         /* Custom radio btn */
         .radio-box {
-            margin:15px 0px;
+            margin: 15px 0px;
             [type="radio"]:checked,
             [type="radio"]:not(:checked) {
                 position: absolute;
@@ -301,4 +292,5 @@ page-become-talent-complete {
             display: block;
         }
     }
+   
 }

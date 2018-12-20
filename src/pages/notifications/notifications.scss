@@ -42,4 +42,80 @@ page-notifications {
 
          }
      }
+
+      /******** large Radio button *************/
+    .radio-card{
+        height: 200px;
+        justify-content: center;
+    }
+    .lg-radio {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        list-style: none;
+        flex:1;
+        justify-content: center;
+        li {
+            position: relative;
+            width: 25%;
+            &::after {
+                content: '';
+                border: 1px dashed $white;
+                width: 100%;
+                position: absolute;
+                left:38px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            label {
+                color: $white;
+                font-size: 12px;
+                font-size: 12px;
+                position: absolute;
+                left: 0px;
+                top:43px;
+            }
+            .small-circle {
+                display:block;
+                border-radius: 100%;
+                border: 4px solid #fff;
+                width: 35px;
+                height: 35px;
+                background: $white;
+                margin: 0px auto;
+                z-index: 1;
+                position: relative;
+                &.processing {
+                    background: #f79a2b;
+                }
+                &.process-completed {
+                    background: green;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        left: 10px;
+                        top: 4px;
+                        position: absolute;
+                        width: 6px;
+                        height: 13px;
+                        border-width: 3px;
+                        border-top-width: 0;
+                        border-left-width: 0;
+                        border-style: solid;
+                        border-color: #ffffff;
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    /******** /large Radio button *************/
+
+
 }

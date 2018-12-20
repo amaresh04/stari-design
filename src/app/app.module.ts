@@ -15,7 +15,7 @@ import { SignupPage } from '../pages/signup/signup';
 // import { BecomeTalentPage } from '../pages/become-talent/become-talent';
 // import { SideMenuPage } from '../pages/side-menu/side-menu';
 // import { CompleteTalentProcessPage } from '../pages/complete-talent-process/complete-talent-process';
-// import { BecomeTalentCompletePage } from '../pages/become-talent-complete/become-talent-complete';
+import { BecomeTalentCompletePage } from '../pages/become-talent-complete/become-talent-complete';
 // import { BecomeTalentProcessPage } from '../pages/become-talent-process/become-talent-process';
 // import { BecomeTalentdefaultPage } from '../pages/become-talentdefault/become-talentdefault';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
@@ -44,7 +44,7 @@ import { AccountSettingPage } from '../pages/account-setting/account-setting';
    // BecomeTalentPage,
    // SideMenuPage,
    // CompleteTalentProcessPage,
-    //BecomeTalentCompletePage,
+    BecomeTalentCompletePage,
     //BecomeTalentProcessPage,
     //BecomeTalentdefaultPage,
     MyProfilePage,
@@ -79,7 +79,7 @@ import { AccountSettingPage } from '../pages/account-setting/account-setting';
     // BecomeTalentPage,
     // SideMenuPage,
     // CompleteTalentProcessPage,
-    // BecomeTalentCompletePage,
+    BecomeTalentCompletePage,
     // BecomeTalentProcessPage,
     // BecomeTalentdefaultPage,
     MyProfilePage,
